@@ -14,6 +14,13 @@ body {
   color: #fff;
 }
 
+/* PC 用の中央寄せレイアウト */
+.container {
+max-width: 800px; /* ←PC表示時の横幅 */
+margin: 0 auto;
+padding: 0 20px;
+}
+  
 header {
   padding: 15px;
   text-align: center;
@@ -38,7 +45,7 @@ header {
   border: 1px solid #444;
   border-radius: 8px;
   padding: 15px;
-  margin: 15px;
+  margin: 20px 0;
   background: #111;
 }
 
@@ -101,12 +108,30 @@ footer {
   text-align: center;
   padding: 15px 0;
 }
+  
+/* PC 用の改善（768px以上に適用） */
+@media (min-width: 768px) {
+.live-card {
+padding: 20px 25px;
+}
+header {
+font-size: 24px;
+padding: 20px;
+}
+.section-title {
+font-size: 28px;
+margin-top: 35px;
+}
+}
+  
 </style>
 </head>
 
 <body>
 
-<!-- メ<header>
+<div class="container">
+    
+<!-- <header>
   TOPE SUICIDA
 </header> -->
 
@@ -132,7 +157,7 @@ footer {
 <div class="live-card">
   <!-- <img src="flyer2.jpg" alt="Flyer 2"> -->
   <div class="live-info">
-    <strong>2026/04/15 (THURS)</strong><br>
+    <strong>2026/04/16 (THURS)</strong><br>
     札幌 KLUB COUNTER ACTION<br>
     OPEN 19:00 / START 19:30
   </div>
@@ -147,6 +172,6 @@ footer {
 <footer>
   © 2025 TOPE SUICIDA
 </footer>
-
+<!-- /container -->
 </body>
 </html>
