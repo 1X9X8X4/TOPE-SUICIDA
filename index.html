@@ -1,32 +1,168 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>イベント告知 - xxx.com</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LIVE SCHEDULE / topesuicida</title>
+
+<style>
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+}
+
+header {
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #333;
+}
+
+.main-visual img {
+  width: 100%;
+  display: block;
+}
+
+/* Live Schedule */
+.section-title {
+  font-size: 24px;
+  margin: 25px 0 10px;
+  text-align: center;
+}
+
+.live-card {
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px;
+  background: #111;
+}
+
+.live-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.live-info {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.reserve-btn {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 10px;
+  background: #e53935;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Large reserve button */
+.reserve-big {
+  background: #ffca28;
+  color: #000;
+  display: block;
+  width: 85%;
+  margin: 25px auto;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* small links */
+.footer-links {
+  text-align: center;
+  margin: 40px 0 15px;
+  font-size: 14px;
+  color: #888;
+}
+
+.footer-links a {
+  color: #888;
+  margin: 0 12px;
+  text-decoration: none;
+}
+
+/* footer */
+footer {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  padding: 15px 0;
+}
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>イベント名：ライブ告知</h1>
-    <p>開催日：YYYY/MM/DD　会場：会場名</p>
-  </header>
 
-  <section>
-    <h2>詳細</h2>
-    <p>ここにイベントの説明を書きます。出演者、時間、注意事項など。</p>
-  </section>
+<header>
+  topesuicida
+</header>
 
-  <section>
-    <h2>予約</h2>
-    <p>
-      <a id="reserve-link" href="https://docs.google.com/forms/d/e/XXXXXXXXXXXX/viewform" target="_blank" rel="noopener">
-        ▶ 予約はこちら（Googleフォーム）
-      </a>
-    </p>
-  </section>
+<!-- メイン画像（フライヤー） -->
+<div class="main-visual">
+  <!-- ここをあなたのライブ画像に差し替え -->
+  <img src="main.jpg" alt="LIVE IMAGE">
+</div>
 
-  <footer>
-    <p>問合せ: info@xxx.com</p>
-  </footer>
+<h2 class="section-title">LIVE SCHEDULE</h2>
+
+<!-- ライブ1 -->
+<div class="live-card">
+  <img src="flyer1.jpg" alt="Flyer 1">
+  <div class="live-info">
+    <strong>2025/03/10 (Mon)</strong><br>
+    東京・下北沢 ◯◯<br>
+    OPEN 18:00 / START 19:00
+  </div>
+  <a href="reserve.html?date=20250310" class="reserve-btn">予約する</a>
+</div>
+
+<!-- ライブ2 -->
+<div class="live-card">
+  <img src="flyer2.jpg" alt="Flyer 2">
+  <div class="live-info">
+    <strong>2025/03/20 (Thu)</strong><br>
+    名古屋・栄 ◯◯<br>
+    OPEN 18:00 / START 19:00
+  </div>
+  <a href="reserve.html?date=20250320" class="reserve-btn">予約する</a>
+</div>
+
+<!-- ライブ3 -->
+<div class="live-card">
+  <img src="flyer3.jpg" alt="Flyer 3">
+  <div class="live-info">
+    <strong>2025/03/30 (Sun)</strong><br>
+    大阪・心斎橋 ◯◯<br>
+    OPEN 18:00 / START 19:00
+  </div>
+  <a href="reserve.html?date=20250330" class="reserve-btn">予約する</a>
+</div>
+
+<!-- 複数日予約 -->
+<a href="reserve.html" class="reserve-big">複数日まとめて予約する</a>
+
+<!-- 小さく地味なリンク -->
+<div class="footer-links">
+  <a href="merch.html">Merch</a>
+  <a href="subscribe.html">Subscribe</a>
+</div>
+
+<footer>
+  © 2025 topesuicida
+</footer>
+
 </body>
 </html>
