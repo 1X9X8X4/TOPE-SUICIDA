@@ -148,6 +148,30 @@ margin-top: 35px;
   opacity: 0.7;
   transform: scale(1.1);
 }
+
+/* 画像2枚 横並び */
+.double-images {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.double-images img {
+  width: 50%;
+  border-radius: 6px;
+  display: block;
+}
+
+/* スマホで縦並びにしたい場合（任意） */
+@media (max-width: 767px) {
+  .double-images {
+    flex-direction: column;
+  }
+
+  .double-images img {
+    width: 100%;
+  }
+}
 </style>
 </head>
 
@@ -166,6 +190,11 @@ margin-top: 35px;
 
 <h2 class="section-title">SHOW DATES</h2>
 
+<div class="double-images">
+<img src="20260415_161.JPG" alt="161">
+<img src="20260416_kca.jpg" alt="kca">
+</div>
+  
 <!-- ライブ1 -->
 <div class="live-card">
   <!-- <img src="flyer1.jpg" alt="Flyer 1"> -->
